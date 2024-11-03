@@ -7,7 +7,7 @@
 //    <div>Duration: 2:52 - 172s</div>
 //</div>
 
-// NOTE: Variables marked HTML refer to content shown to the user. Variables Marked DATA are calling information from objects
+// NOTE: Variables Prefixed HTML refer to content shown to the user. Variables Prefixed DATA are calling information from objects
 
 
 // I was going to use this for the search query but I got a bit lazy
