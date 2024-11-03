@@ -1,0 +1,154 @@
+/*
+Each group or "class" has attributes that I want to give to certain elements. To create a group/class you define it by doing ".group-title {}" 
+To ensure all elements are uniform I assign them to a group I defined and then dictate the groups attributes on here.
+
+Look at it this way, If you have a song title and you want all song titles to stand out from other text on the page,
+you create a group for song titles like shown below. Anything you consider a title will both be bold and italic as long as you
+assign that title element to the song title group, I defined my song title group as individual-title-attributes.
+
+an elemnent assigned to this group in my html should look like this ---> <div id="individual-title-attributes> content </div>
+*/
+
+.individual-title-attributes {
+    font-weight: bold; 
+    font-style: italic;
+    width: 221px;
+    color: rgb(188, 188, 188);
+}
+
+.artist-hyperlinks {
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(100, 100, 100);
+}
+
+.individual-song-container-styling {
+    position: sticky;
+    border-right-width: 30px;
+    height: 190px;
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 105px;
+    padding-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: block;
+    float: left;
+}
+
+.song-image-attributes {
+    width: 30vh;
+    border-radius: 9%;
+    padding-top: 2%;
+}
+
+.bobify-body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    height: 5000px; /* Make this site really long */
+    width: 5000px; /* Make this site really wide */
+    overflow: hidden; /* Hide scrollbars */
+}
+
+
+/*
+Container IDs are denoted by the hashtag (#) in front of the name. 
+Container IDs are one use and not to be confused with classes. They perform a similar function but they are only
+meant to be used by one element on the page.
+*/
+
+#songRow1 {
+    height: 45%;
+    width: max-content;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(58, 59, 59);
+    background-color: rgb(32, 31, 34);
+    
+    border-left-width: 2.4;
+    padding-left: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+   }
+
+#collection-header {
+    font: bold;
+    position: relative;
+    left: 19px;
+    color: rgb(255, 255, 255);
+}
+
+#collection-subheader {
+    font: bold;
+    font: italic;
+    font-weight: light;
+    position: relative;
+    left: 19px;
+    bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#bobify-alert-button {
+    margin-left: 20px;
+    border-right-width: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    right: 0px;
+}
+
+#SearchQueryContainer {
+    padding-left: 0px;
+    width: 350px;
+    padding-right: 0px;
+    border-left-width: 20px;
+    padding-top: 0px;
+    margin-left: 20px;
+    margin-top: 10px;
+    white-space: nowrap;
+    display: inline;
+}
+
+#SearchQueryContainer br {
+    display: none;
+}
+
+#ConfirmSearch {
+    margin-left: 20px;
+}
+
+#promoted-songs-list {
+    height: 100vh;
+}
+
+/*----------------------------------------*/
+.TouchedElementHighlight {    
+    animation-name: white-to-red;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes white-to-red {
+    from {color: rgb(188, 188, 188);}
+    to {color: rgb(255, 255, 255);}
+}
+
+
+.TouchedElementReturn {
+    animation-name: red-to-white;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes red-to-white {
+
+    from {color: rgb(255, 255, 255);}
+    to {color: rgb(188, 188, 188)}
+
+}

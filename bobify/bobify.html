@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!--
+        <head></head> - element- content hidden from the user essential for the page.
+    -->
+
+<head>
+    <!--
+            <title></title> element - Adds tab title up at the top of the broser.
+        -->
+    <title>bobify</title> <!--new branding because my friends keep calling me bob, i totally won't be sued-->
+    <link rel="stylesheet" href="css/bobify-stylesheet.css">
+    <script src="bobifyJS/bobifySongArray.js"></script>
+</head>
+<!--
+            <body></body> element - All content that's shown to the user.
+        -->
+
+<body class="bobify-body">
+    <!--
+                <div></div> element - Essentially a container for other elements, keeps things organized.
+                <a></a> element - Tag where you can include hyperlink to the text inside.
+                <img> element - Similar to the anchor tag you can pull an image using a link and display it.
+            -->
+    <div>
+        <h1 id="collection-header">Bobify-Collection:</h1>
+        <h3 id="collection-subheader">Try out these classics!</h3>
+    </div>
+
+    <!--Creates a button labeled "Search" on the page.-->
+    <button id="ConfirmSearch">Search</button>
+    <button id="Clear-Search">Clear Filter</button>
+    
+    <!--Creates an editable box where the user can input a search term.-->
+    <div contenteditable="true"; id="SearchQueryContainer">What do you want to listen to?</div>
+
+    <!--
+                div directly below is a container which holds each individual song and their respective containers. I.E.
+                A cardboard box with 4 UNIFORM boxes inside of it.
+            -->
+    <div id="promoted-songs-list">
+        <div id="songRow1"></div>
+        <div id="songRow2"></div>
+    </div>
+
+    <script src="bobifyJS/bobifyScripts.js"></script>
+
+</body>
+
+</html>
